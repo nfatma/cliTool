@@ -1,0 +1,17 @@
+<h1>You can pay here</h1>
+
+<hr />
+
+<div class="formWrapper">
+  <form id=orderHere action="/api/orders" method="POST">
+   <input type="hidden" name="_method" value="POST" />
+    <div class="formError"></div>
+    <div class="inputWrapper">
+      <div class="inputEmail">Enter your Email (for security purpose)</div>
+      <input class="emailInput" type="string" name="email" placeholder="xyz@abc...." /><br><br>
+      <div class="inputWrapper ctaWrapper">
+        <button type="submit" class="cta green">Proceed to Payment</button>
+      </div>
+    </div>
+  </form>
+</div>

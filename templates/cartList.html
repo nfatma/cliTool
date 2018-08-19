@@ -1,0 +1,37 @@
+<h1>Your Cart Items</h1>
+
+<hr />
+
+<h2>Add your Favorite Pizza in your Cart</h2>
+
+<div class="formWrapper">
+  <form id=cartEdit action="/api/cart" method="POST">
+   <input type="hidden" name="_method" value="POST"/>
+    <div class="formError"></div>
+    <div class="formSuccess">Items have been added successfully in your Cart.</div>
+    <center><a class="cta blue" href="/cart/edit">Edit Cart</a></center><hr/>
+    <div class="inputWrapper">
+      <div class="checkboxGroup">
+        <input type="checkbox" class="multiselect intval" name="listOfItems" value="1" checked>crispy corn pizza<br>
+        <input type="checkbox" class="multiselect intval" name="listOfItems" value="2" checked>grilled baby corn pizza<br>
+        <input type="checkbox" class="multiselect intval" name="listOfItems" value="3">veg kebab pizza<br>
+        <input type="checkbox" class="multiselect intval" name="listOfItems" value="4">paneer tikka pizza<br>
+        <input type="checkbox" class="multiselect intval" name="listOfItems" value="5">tandoori chicken pizza<br>
+        <input type="checkbox" class="multiselect intval" name="listOfItems" value="6">mushroom mix pizza<br>
+        <input type="checkbox" class="multiselect intval" name="listOfItems" value="7">poached egg pizza<br>
+        <input type="checkbox" class="multiselect intval" name="listOfItems" value="8">chilly chicken pizza<br>
+        <input type="checkbox" class="multiselect intval" name="listOfItems" value="9">onion capsicum pizza<br>
+        <input type="checkbox" class="multiselect intval" name="listOfItems" value="10">cheese burst pizza<br><hr/>
+      </div>
+      <div class="inputEmail">Enter your Email (for security purpose)</div>
+      <input class="emailInput" type="string" name="email" placeholder="xyz@abc...." /><br><br>
+      <div class="inputWrapper ctaWrapper">
+        <button type="submit" class="cta green">Add To Cart</button>
+      </div>
+      <div class="ctaWrapper">
+        <a class="cta green" href="/cart/all">Continue Adding</a>
+        <a class="cta blue" href="/api/orders">CheckOut</a>
+      </div>
+    </div>
+  </form>
+</div>
